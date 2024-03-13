@@ -1,6 +1,6 @@
 ﻿// Roteiro 02   - "Criar e executar aplicativos de console C# simples (Introdução ao C#, Parte 2)"
 // Modulo 06    - "Projeto guiado – Desenvolver estruturas foreach e if-elseif-else para processar dados de matriz em C#"
-// Unidade 02   - "Exercício – Criar matrizes e loops foreach" (25min)
+// Unidade 03   - "Exercício – Criar matrizes e loops foreach" (25min)
 // https://learn.microsoft.com/pt-br/training/modules/guided-project-arrays-iteration-selection/3-exercise-create-arrays-foreach-loops
 
 using System;
@@ -8,37 +8,60 @@ using System;
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-#region TEMP_ANOTAÇÕES
-/*
-    É necessário acessar os arquivos da unidade anterior com o código de referencia que será refatorado: 
-    CT01FCS_R02M06U2 -> files > Guided-project... -> Guided-project... -> Starter -> Program.cs
-    Comecei o exercício na noite de 2023-03-12 porém não dará para concluir. Fui até onde deu.
-
-    Seções:
-    [OK]    Examinar o conteúdo do arquivo Program.cs
-    []      Criar as matrizes de notas de tarefa
-    []      Criar uma iteração foreach para calcular a nota de Sophia
-    []      Verificar seu trabalho
-*/
-#endregion
-
 #region CT01FCS_R02M06U3
 
 
 
     #region Criar as matrizes de notas de tarefa
+/*
+// initialize variables - graded assignments 
+int currentAssignments = 5;
 
+int[] sophiaScores = new int[] { 90, 86, 87, 98, 100 };
+int[] andrewScores = new int[] { 92, 89, 87, 96, 90 };
+int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
+int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
+*/
     #endregion
 
 
+    #region Criar uma iteração foreach para calcular a nota de Sophia
+// initialize variables - graded assignments 
+int currentAssignments = 5;
 
+int[] sophiaScores = new int[] { 90, 86, 87, 98, 100 };
+int[] andrewScores = new int[] { 92, 89, 87, 96, 90 };
+int[] emmaScores = new int[] { 90, 85, 87, 98, 68 };
+int[] loganScores = new int[] { 90, 95, 87, 88, 96 };
+
+int sophiaSum = 0;
+
+decimal sophiaScore;
+
+foreach (int score in sophiaScores) {
+    // add the exam score to the sum
+    sophiaSum += score;
+}
+
+sophiaScore = (decimal)sophiaSum / currentAssignments;
+
+Console.WriteLine("Student\t\tGrade\n");
+Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
+
+Console.WriteLine("Press the Enter key to continue");
+Console.ReadLine();
+    #endregion
+
+
+    
 #endregion
 
 
 
 
 
-#region Starter base code refactoring
+#region Recommended Starter Code
+/*
 //using System;
 
 // initialize variables - graded assignments 
@@ -96,4 +119,5 @@ Console.WriteLine("Logan:\t\t" + loganScore + "\tA-");
 
 Console.WriteLine("Press the Enter key to continue");
 Console.ReadLine();
+*/
 #endregion
