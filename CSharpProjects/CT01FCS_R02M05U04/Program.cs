@@ -6,7 +6,7 @@
 // See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
 
-#region CT01FCS_R02M05U4
+#region CT01FCS_R02M05U04
 
 
 
@@ -107,7 +107,7 @@ if ((roll1 == roll2) || (roll2 == roll3) || (roll1 == roll3))
 
 
 
-#region CT01FCS_R02M05U3
+#endregion
 
 
 
@@ -146,5 +146,4 @@ if ((rolls[0] == rolls[1]) || (rolls[1] == rolls[2]) || (rolls[0] == rolls[2]))
         total += 2;
     }
 }
-
 #endregion
