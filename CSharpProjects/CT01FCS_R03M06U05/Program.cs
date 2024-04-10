@@ -1,7 +1,7 @@
 ﻿// Roteiro 03   - "Adicionar lógica a aplicativos de console C# (Introdução ao C#, Parte 3)"
 // Modulo 06    - "Projeto guiado – Desenvolver estruturas de ramificação condicional e loop em C#"
 // Unidade 05   - "Exercício – Criar e testar um loop para inserir novos dados de animal de estimação" (20min)
-// 
+// https://learn.microsoft.com/pt-br/training/modules/guided-project-develop-conditional-branching-looping/5-exercise-build-loop-new-array-data
 
 // See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
