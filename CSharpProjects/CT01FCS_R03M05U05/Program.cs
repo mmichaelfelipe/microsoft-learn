@@ -1,5 +1,4 @@
-﻿
-// Roteiro 03   - "Adicionar lógica a aplicativos de console C# (Introdução ao C#, Parte 3)"
+﻿// Roteiro 03   - "Adicionar lógica a aplicativos de console C# (Introdução ao C#, Parte 3)"
 // Modulo 05    - "Adicione lógica de loop a seu código usando as instruções "do-while" e "while" em C#"
 // Unidade 05   - "Exercício – Concluir uma atividade de desafio em que é preciso diferenciar entre instruções de iteração do e while" (14min)
 // https://learn.microsoft.com/pt-br/training/modules/csharp-do-while/5-exercise-challenge-differentiate-while-do-statements
@@ -78,28 +77,67 @@
         - Your input value (7) has been accepted.  
  */
 
+#region Minhar resposta para o desafio (Projeto de código 1)
+Console.WriteLine("Enter an integer value between 5 and 10");
+int userInputNumber;
+
+do
+{
+    string? userInput = Console.ReadLine();
+
+    if (!int.TryParse(userInput, out userInputNumber))
+    {
+        Console.WriteLine("Sorry, you entered a invalid number, please try again.");
+        continue;
+    }
+    if (userInputNumber is < 5 or > 10)
+    {
+        Console.WriteLine($"You entered {userInputNumber}. Please enter a number between 5 and 10.");
+        continue;
+    }
+
+    break;
+} while (true);
+
+Console.WriteLine($"Your input value ({userInputNumber})");
+#endregion
+
+#region Resposta oficial
+//string? readResult;
+//string valueEntered = "";
+//int numValue = 0;
+//bool validNumber = false;
+
 //Console.WriteLine("Enter an integer value between 5 and 10");
-//int userInputNumber;
 
 //do
 //{
-//    string? userInput = Console.ReadLine();
-
-//    if (!int.TryParse(userInput, out userInputNumber))
+//    readResult = Console.ReadLine();
+//    if (readResult != null)
 //    {
-//        Console.WriteLine("Sorry, you entered a invalid number, please try again.");
-//        continue;
-//    }
-//    if (userInputNumber is < 5 or > 10)
-//    {
-//        Console.WriteLine($"You entered {userInputNumber}. Please enter a number between 5 and 10.");
-//        continue;
+//        valueEntered = readResult;
 //    }
 
-//    break;
-//} while (true);
+//    validNumber = int.TryParse(valueEntered, out numValue);
 
-//Console.WriteLine($"Your input value ({userInputNumber})");
+//    if (validNumber == true)
+//    {
+//        if (numValue <= 5 || numValue >= 10)
+//        {
+//            validNumber = false;
+//            Console.WriteLine($"You entered {numValue}. Please enter a number between 5 and 10.");
+//        }
+//    }
+//    else
+//    {
+//        Console.WriteLine("Sorry, you entered an invalid number, please try again");
+//    }
+//} while (validNumber == false);
+
+//Console.WriteLine($"Your input value ({numValue}) has been accepted.");
+
+//readResult = Console.ReadLine();
+#endregion
 #endregion
 
 
@@ -127,6 +165,7 @@
         - Your input value (Administrator) has been accepted.
  */
 
+#region Minhar resposta para o desafio (Projeto de código 2)
 //Console.WriteLine("Enter your role name (Administrator, Manager or User)");
 //string? userInput;
 
@@ -143,6 +182,36 @@
 //} while (true);
 
 //Console.WriteLine($"Your input value ({userInput}) has been accepted.");
+#endregion
+
+#region Resposta oficial
+//string? readResult;
+//string roleName = "";
+//bool validEntry = false;
+
+//do
+//{
+//    Console.WriteLine("Enter your role name (Administrator, Manager, or User)");
+//    readResult = Console.ReadLine();
+//    if (readResult != null)
+//    {
+//        roleName = readResult.Trim();
+//    }
+
+//    if (roleName.ToLower() == "administrator" || roleName.ToLower() == "manager" || roleName.ToLower() == "user")
+//    {
+//        validEntry = true;
+//    }
+//    else
+//    {
+//        Console.Write($"The role name that you entered, \"{roleName}\" is not valid. ");
+//    }
+
+//} while (validEntry == false);
+
+//Console.WriteLine($"Your input value ({roleName}) has been accepted.");
+//readResult = Console.ReadLine();
+#endregion
 #endregion
 
 
@@ -175,20 +244,88 @@
         - I like all three of the menu choices
  */
 
-string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
-int periodLocation;
+#region Minhar resposta para o desafio (Projeto de código 3)
+/* Métodos
+ * IndexOf()    -> Obtem a posição da primeira ocorrência de determado elemento no array.
+ *              -> Se não encontrar ocorrência, retorna -1.
+ *              
+ * Remove()     ->  (int startIndex) retorna uma cadeia de caracteres que remove cadeia de caracteres a partir do indice especificado
+ *                  (int startIndex, int length) retorna uma cadeia de caracteres que  remove cadeira de caracteres a partir do indice especificado e tem o tamanho do range especificado
 
-foreach (string myString in myStrings)
-{
-    periodLocation = myString.IndexOf('.');
-    while (periodLocation < myString.Length)
-    {
-        // .Remove()
-        // .Substring()
-        // .TrimStart()
-        Console.WriteLine(myString.Remove(periodLocation));
-    }
-}
+ * Substring()  ->  (int startIndex) retorna uma subcadeia de caracteres que é iniciada a partir do indice especificado
+ *                  (int startIndex, int length) returma uma subcadeia que é iniciada a partir do indice especificado e tem o tamanho do range especificado
+ * 
+ * TrimStart()  ->  ()   retorna uma cadeia de caracteres removendo todas as ocorrências de espaço em branco a esquerda até a primeira ocorrencia de caractare não vazio.
+ *                  (char trimChar) retorna uma cadeia de caracteres removendo todas as ocorrencias do caracteres informado no parametro a esquerda até a primeira ocorrencia de caractare não vazio.
+ *                  (char[]) retorna uma cadeia de caracteres removendo todas as ocorrencias do conjunto de caracteres informado no parametro a esquerda até a primeira ocorrencia de caractare não vazio.
+ */
+
+/*
+    Desafio abaixo não concluído, necessário refatorar.
+    Porém através das tentetivas, o escopo do desafio e os conhecimentos necessários foram adquiridos.
+ */
+//string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+//int periodLocation = 0;
+
+//foreach (string myString in myStrings)
+//{
+//    periodLocation = myString.IndexOf('.');
+
+//    while (periodLocation < myString.Length)
+//    {
+//        string phrase;  //[DEBUG]
+
+//        if (periodLocation != -1)
+//        {
+//            phrase = myString.Remove(periodLocation);
+
+
+//            Console.WriteLine(phrase);
+
+//            // pegar agora a proxima ocorrencia de ponto
+//            periodLocation += myString.Substring(periodLocation++).IndexOf('.');
+//        }
+//    }
+//}
+#endregion
+
+#region Resposta oficial
+//string[] myStrings = new string[2] { "I like pizza. I like roast chicken. I like salad", "I like all three of the menu choices" };
+//int stringsCount = myStrings.Length;
+
+//string myString = "";
+//int periodLocation = 0;
+
+//for (int i = 0; i < stringsCount; i++)
+//{
+//    myString = myStrings[i];
+//    periodLocation = myString.IndexOf(".");
+
+//    string mySentence;
+
+//    // extract sentences from each string and display them one at a time
+//    while (periodLocation != -1)
+//    {
+
+//        // first sentence is the string value to the left of the period location
+//        mySentence = myString.Remove(periodLocation);
+
+//        // the remainder of myString is the string value to the right of the location
+//        myString = myString.Substring(periodLocation + 1);
+
+//        // remove any leading white-space from myString
+//        myString = myString.TrimStart();
+
+//        // update the comma location and increment the counter
+//        periodLocation = myString.IndexOf(".");
+
+//        Console.WriteLine(mySentence);
+//    }
+
+//    mySentence = myString.Trim();
+//    Console.WriteLine(mySentence);
+//}
+#endregion
 
 #endregion
 #endregion
