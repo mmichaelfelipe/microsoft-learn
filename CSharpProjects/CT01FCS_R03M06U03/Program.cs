@@ -354,8 +354,6 @@
 
 #region Escreva o código de espaço reservado para cada caso da instrução switch
 // the ourAnimals array will store the following: 
-using System.Threading.Channels;
-
 string animalSpecies = "";
 string animalID = "";
 string animalAge = "";

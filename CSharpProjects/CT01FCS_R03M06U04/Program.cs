@@ -12,8 +12,6 @@
 
 #region Criar um loop para a iteração na matriz ourAnimals
 //// the ourAnimals array will store the following: 
-//using System.Threading.Channels;
-
 //string animalSpecies = "";
 //string animalID = "";
 //string animalAge = "";
@@ -181,8 +179,6 @@
 
 #region Verificar os dados de animal de estimação existentes e exibir o resultado
 //// the ourAnimals array will store the following: 
-//using System.Threading.Channels;
-
 //string animalSpecies = "";
 //string animalID = "";
 //string animalAge = "";
@@ -350,10 +346,9 @@
 //} while (menuSelection != "exit");
 #endregion
 
+
 #region Exibir todas as características de animais de estimação com dados atribuídos
 // the ourAnimals array will store the following: 
-using System.Threading.Channels;
-
 string animalSpecies = "";
 string animalID = "";
 string animalAge = "";
