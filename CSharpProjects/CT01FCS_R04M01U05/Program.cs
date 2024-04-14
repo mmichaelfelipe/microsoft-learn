@@ -13,7 +13,8 @@
 #region Como os tipos de referência são diferentes dos tipos de valor
 /*
 Uma variável de tipo de valor armazena os próprios valores diretamente em uma área de armazenamento chamada pilha. 
-A pilha é a memória alocada ao código que está em execução, no momento, na CPU (também conhecida como o registro de ativação ou quadro de ativação). 
+A pilha é a memória alocada ao código que está em execução, no momento, 
+na CPU (também conhecida como o registro de ativação ou quadro de ativação). 
 Quando a execução do registro de ativação for concluída, os valores na pilha serão removidos.
 
 Uma variável de tipo de referência armazena os próprios valores em uma região de memória separada chamada heap. 
