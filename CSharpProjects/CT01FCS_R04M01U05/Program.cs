@@ -31,7 +31,7 @@ Quando o código usa a variável, o Tempo de Execução do .NET pesquisa sem int
 //int[] data;
 #endregion
 
-#region 3. Criar uma instância da matriz in usando a palavra-chave new
+#region 3. Criar uma instância da matriz int usando a palavra-chave new
 //int[] data;
 //data = new int[3];
 #endregion
