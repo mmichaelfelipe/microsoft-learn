@@ -20,14 +20,12 @@ CultureInfo.CurrentCulture = new CultureInfo("en-US");
 //string[] values = { "12.3", "45", "ABC", "11", "DEF" };
 //foreach (string value in values)
 //{
-    
+
 //}
 #endregion
 
-#region 4. 
+#region 4. Conclua o código necessário, colocando-o dentro do bloco de código da estrutura de loop da matriz. É necessário implementar as seguintes regras de negócio na lógica do código:
 /*
-Conclua o código necessário, colocando-o dentro do bloco de código da estrutura de loop da matriz. É necessário implementar as seguintes regras de negócio na lógica do código:
-
 Regra 1: Se o valor for alfabético, concatene-o para formar uma mensagem.
 Regra 2: se o valor for numérico, adicione-o ao total.
 Regra 3: o resultado deve corresponder à seguinte saída:
