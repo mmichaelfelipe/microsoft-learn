@@ -1,7 +1,7 @@
 ﻿// Roteiro 04   - "Trabalhar com os dados variáveis em aplicativos de console C# (Introdução ao C#, Parte 4)"
 // Modulo 02    - "Converter tipos de dados usando técnicas de conversão cast em C#"
 // Unidade 02   - "Exercício – Explorar a coerção e a conversão de tipo de dados" (30min)
-// https://learn.microsoft.com/pt-br/training/modules/csharp-choose-data-type/5-exercise-reference-types
+// https://learn.microsoft.com/pt-br/training/modules/csharp-convert-cast/2-exercise-data-type-conversion
 
 // See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
