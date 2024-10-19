@@ -1,5 +1,5 @@
 ﻿// Roteiro 04   - "Trabalhar com os dados variáveis em aplicativos de console C# (Introdução ao C#, Parte 4)"
-// Modulo 02    - "Executar operações em matrizes usando métodos auxiliares em C#"
+// Modulo 03    - "Executar operações em matrizes usando métodos auxiliares em C#"
 // Unidade 07   - "Exercício – Concluir um desafio em que é preciso analisar uma cadeia de caracteres de pedidos, classificá-los e marcar possíveis erros" (05min)
 // https://learn.microsoft.com/pt-br/training/modules/csharp-arrays-operations/7-challenge-2
 

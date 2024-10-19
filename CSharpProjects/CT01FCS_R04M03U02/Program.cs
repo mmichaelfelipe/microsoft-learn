@@ -1,5 +1,5 @@
 ﻿// Roteiro 04   - "Trabalhar com os dados variáveis em aplicativos de console C# (Introdução ao C#, Parte 4)"
-// Modulo 02    - "Executar operações em matrizes usando métodos auxiliares em C#"
+// Modulo 03    - "Executar operações em matrizes usando métodos auxiliares em C#"
 // Unidade 02   - "Exercício – Conhecer as funções Sort() e Reverse()" (10min)
 // https://learn.microsoft.com/pt-br/training/modules/csharp-arrays-operations/2-exercise-sort-reverse
 
