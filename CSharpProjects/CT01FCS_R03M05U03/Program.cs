@@ -107,39 +107,39 @@
 #endregion
 
 #region Refatorando minha versão do desafio
-//int heroHealth = 10;
-//int monsterHealth = 10;
-//string playerWinner;
+int heroHealth = 10;
+int monsterHealth = 10;
+string playerWinner;
 
-//int damage = 0;
-//var randomDamage = new Random();
+int damage = 0;
+var randomDamage = new Random();
 
-//do
-//{
-//    Console.WriteLine("[INICIANDO NOVA RODADA]");
+do
+{
+    Console.WriteLine("[INICIANDO NOVA RODADA]");
 
-//    // turno do heroi
-//    damage = randomDamage.Next(1, 11);
-//    monsterHealth -= damage;
-//    Console.WriteLine($"Monster was damaged and lost {damage} and now has {monsterHealth} health.");
-//    if (monsterHealth <= 0)
-//    {
-//        playerWinner = "Hero";
-//        continue;
-//    }
+    // turno do heroi
+    damage = randomDamage.Next(1, 11);
+    monsterHealth -= damage;
+    Console.WriteLine($"Monster was damaged and lost {damage} and now has {monsterHealth} health.");
+    if (monsterHealth <= 0)
+    {
+        playerWinner = "Hero";
+        continue;
+    }
 
-//    // turno do monstro
-//    damage = randomDamage.Next(1, 11);
-//    heroHealth -= damage;
-//    Console.WriteLine($"Hero was damaged and lost {damage} and now has {heroHealth} health.");
-//    if (heroHealth <= 0)
-//    {
-//        playerWinner = "Monster";
-//        continue;
-//    }
-//} while (true);
+    // turno do monstro
+    damage = randomDamage.Next(1, 11);
+    heroHealth -= damage;
+    Console.WriteLine($"Hero was damaged and lost {damage} and now has {heroHealth} health.");
+    if (heroHealth <= 0)
+    {
+        playerWinner = "Monster";
+        continue;
+    }
+} while (true);
 
-//Console.WriteLine($"{playerWinner} wins!");
+Console.WriteLine($"{playerWinner} wins!");
 #endregion
 #endregion
 
