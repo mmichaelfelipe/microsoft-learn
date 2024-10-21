@@ -11,13 +11,13 @@ Console.WriteLine("Hello, World!");
 
 
     #region Exemplos de nome de variável
-char userOption;
+//char userOption;
 
-int gameScore;
+//int gameScore;
 
-float particlesPerMillion;
+//float particlesPerMillion;
 
-bool processedCustomer;
+//bool processedCustomer;
     #endregion
 
 

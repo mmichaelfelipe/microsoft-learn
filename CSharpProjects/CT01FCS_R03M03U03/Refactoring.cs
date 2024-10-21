@@ -10,74 +10,74 @@
 namespace CT01FCS_R03M03U03;
 
 #region Refatorando minha versão de resposta para o desafio
-public class Refactoring
-{
-    static void Main(string[] args)
-    {
-        var productInfo = new ProductInfo("01-MN-L");
-        productInfo.PrintInfo();
-    }
-}
+//public class Refactoring
+//{
+//    public static void Main(string[] args)
+//    {
+//        var productInfo = new ProductInfo("01-MN-L");
+//        productInfo.PrintInfo();
+//    }
+//}
 
-public enum ProductType
-{
-    SweatShirt,
-    TShirt,
-    SweatPants,
-    Other
-}
+//public enum ProductType
+//{
+//    SweatShirt,
+//    TShirt,
+//    SweatPants,
+//    Other
+//}
 
-public enum Color
-{
-    Black,
-    Maroon,
-    White
-}
+//public enum Color
+//{
+//    Black,
+//    Maroon,
+//    White
+//}
 
-public enum Size
-{
-    Small,
-    Medium,
-    Large,
-    OneSizeFitsAll
-}
+//public enum Size
+//{
+//    Small,
+//    Medium,
+//    Large,
+//    OneSizeFitsAll
+//}
 
-public class ProductInfo
-{
-    public string Sku { get; }
-    public ProductType Type { get; }
-    public Color Color { get; }
-    public Size Size { get; }
+//public class ProductInfo
+//{
+//    public string Sku { get; }
+//    public ProductType Type { get; }
+//    public Color Color { get; }
+//    public Size Size { get; }
 
-    public ProductInfo(string sku)
-    {
-        Sku = sku;
-        var parts = sku.Split('-');
-        Type = parts[0] switch
-        {
-            "01" => ProductType.SweatShirt,
-            "02" => ProductType.TShirt,
-            "03" => ProductType.SweatPants,
-            _ => ProductType.Other
-        };
-        Color = parts[1] switch
-        {
-            "BL" => Color.Black,
-            "MN" => Color.Maroon,
-            _ => Color.White
-        };
-        Size = parts[2] switch
-        {
-            "S" => Size.Small,
-            "M" => Size.Medium,
-            "L" => Size.Large,
-            _ => Size.OneSizeFitsAll
-        };
-    }
+//    public ProductInfo(string sku)
+//    {
+//        Sku = sku;
+//        var parts = sku.Split('-');
+//        Type = parts[0] switch
+//        {
+//            "01" => ProductType.SweatShirt,
+//            "02" => ProductType.TShirt,
+//            "03" => ProductType.SweatPants,
+//            _ => ProductType.Other
+//        };
+//        Color = parts[1] switch
+//        {
+//            "BL" => Color.Black,
+//            "MN" => Color.Maroon,
+//            _ => Color.White
+//        };
+//        Size = parts[2] switch
+//        {
+//            "S" => Size.Small,
+//            "M" => Size.Medium,
+//            "L" => Size.Large,
+//            _ => Size.OneSizeFitsAll
+//        };
+//    }
 
-    public void PrintInfo()
-    {
-        Console.WriteLine($"Product: {Size} {Color} {Type}");
-    }
-}
+//    public void PrintInfo()
+//    {
+//        Console.WriteLine($"Product: {Size} {Color} {Type}");
+//    }
+//}
 #endregion
