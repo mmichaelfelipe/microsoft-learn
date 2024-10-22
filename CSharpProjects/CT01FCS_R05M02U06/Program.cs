@@ -1,5 +1,5 @@
 ﻿// Roteiro 05   - "Criar métodos em aplicativos de console C# (Introdução ao C#, Parte 5)"
-// Modulo 01    - "Criar métodos C# com parâmetros"
+// Modulo 02    - "Criar métodos C# com parâmetros"
 // Unidade 06   - "Exercício – Concluir o desafio de exibir endereços de email" (10min)
 // https://learn.microsoft.com/pt-br/training/modules/create-c-sharp-methods-parameters/6-exercise-challenge-email-addresses
 
