@@ -6,7 +6,7 @@
 // See https://aka.ms/new-console-template for more information
 // Console.WriteLine("Hello, World!");
 
-#region CT01FCS_R01M05U02
+#region CT01FCS_R05M05U02
 
 #region Especificacao do projeto (en-US)
 /*
@@ -60,6 +60,8 @@
     - Código para encerrar a execução se uma chave não suportada for inserida.
     - Código para encerrar a execução se o terminal for redimensionado.
 */
+
+Console.WriteLine("Hello, World!");
 #endregion
 
 #endregion
