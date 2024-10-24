@@ -60,6 +60,8 @@
     - Código para encerrar a execução se uma chave não suportada for inserida.
     - Código para encerrar a execução se o terminal for redimensionado.
 */
+
+Console.WriteLine("Hello, World!");
 #endregion
 
 #endregion
