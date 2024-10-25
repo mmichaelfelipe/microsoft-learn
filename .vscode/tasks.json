@@ -2,12 +2,12 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build_CT01FCS_R06M02U05",
+            "label": "build_CT01FCS_R06M02U07",
             "command": "dotnet",
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/CSharpProjects/CT01FCS_R06M02U05/CT01FCS_R06M02U05.csproj",
+                "${workspaceFolder}/CSharpProjects/CT01FCS_R06M02U07/CT01FCS_R06M02U07.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
