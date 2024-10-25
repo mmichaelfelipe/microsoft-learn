@@ -83,7 +83,4 @@ static void Process3(string[,] products, int item)
 #endregion
 #endregion
 
-#region
-#endregion
-
 #endregion
