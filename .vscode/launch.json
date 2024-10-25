@@ -9,9 +9,11 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/CSharpProjects/CT01FCS_R06M02U03/bin/Debug/net8.0/CT01FCS_R06M02U03.dll",
+            //"program": "${workspaceFolder}/CSharpProjects/CT01FCS_R06M02U03/bin/Debug/net8.0/CT01FCS_R06M02U03.dll",
+            "program": "${workspaceFolder}/CSharpProjects/CT01FCS_R06M02U05/bin/Debug/net8.0/CT01FCS_R06M02U05.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/CSharpProjects/CT01FCS_R06M02U03",
+            //"cwd": "${workspaceFolder}/CSharpProjects/CT01FCS_R06M02U03",
+            "cwd": "${workspaceFolder}/CSharpProjects/CT01FCS_R06M02U05",
             "console": "internalConsole",
             "stopAtEntry": false
         },
