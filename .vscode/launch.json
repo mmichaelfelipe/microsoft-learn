@@ -5,6 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Build CT01FCS_R06M04U03 (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build_CT01FCS_R06M04U03",
+            "program": "${workspaceFolder}/CSharpProjects/CT01FCS_R06M04U03/bin/Debug/net8.0/CT01FCS_R06M04U03.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/CSharpProjects/CT01FCS_R06M04U03",
+            "console": "integratedTerminal",
+            "stopAtEntry": false
+        },
+        {
             "name": "Build CT01FCS_R06M03U09 (console)",
             "type": "coreclr",
             "request": "launch",
